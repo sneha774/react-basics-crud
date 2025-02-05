@@ -1,10 +1,11 @@
 import React from 'react'
+import Listings from '../components/Listings'
 
 const JobsPage = () => {
     return (
-        <div>
-            Jobs Page
-        </div>
+        <section>
+            <Listings />
+        </section>
     )
 }
 

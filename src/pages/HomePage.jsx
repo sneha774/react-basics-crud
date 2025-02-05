@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <Hero />
             <HomeCards />
-            <Listings />
+            <Listings isHome={true} />
             <ActionFooter />
         </>
     )
