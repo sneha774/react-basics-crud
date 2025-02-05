@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router';
+
 import { FaMapMarker } from 'react-icons/fa';
 
 const Listing = ({ job }) => {
@@ -33,12 +35,12 @@ const Listing = ({ job }) => {
                         <FaMapMarker className="inline text-lg m-1" />
                         {job.location}
                     </div>
-                    <a
-                        href={`/job/${job.id}`}
+                    <NavLink
+                        to={`/job/${job.id}`}
                         className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                     >
                         Read More
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </div>
